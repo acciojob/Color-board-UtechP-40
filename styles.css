@@ -1,1 +1,23 @@
 /*  your css code here. If applicable */
+/* Styling for the container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(40, 20px); /* 40 columns of 20px width */
+    grid-template-rows: repeat(20, 20px);    /* 20 rows of 20px height */
+    gap: 2px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Styling for each box (square) */
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: #111; /* Initial color (dark) */
+    transition: background-color 1s ease; /* Smooth transition for color */
+}
+
+/* Hover effect to change color */
+.square:hover {
+    background-color: var(--hover-color); /* Color will change dynamically */
+}
